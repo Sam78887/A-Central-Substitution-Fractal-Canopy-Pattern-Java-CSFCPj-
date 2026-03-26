@@ -1,3 +1,11 @@
+/*
+ * Yoh-hoy Fractal Algorithm (CSFCPj)
+ * ----------------------------------
+ * Created by: Samaresh Dutta ( Sam78887 )
+ * Date: March 2026
+ * License: MIT (See LICENSE file for details)
+ */
+
 import java.util.Scanner;
 
 public class YohFractalPattern {
