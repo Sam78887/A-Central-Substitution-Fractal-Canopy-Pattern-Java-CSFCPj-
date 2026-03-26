@@ -1,0 +1,11 @@
+The Yoh-hoy Fractal Pattern Description :
+The Yoh-hoy Fractal is a unique type of growing pattern created by a specific set of rules. Unlike most patterns that grow only on the outside, this one grows from the inside out.
+•	The Building Blocks: The system uses three main characters: Y, o, and h. It starts with the seed "Yoh" and creates a mirror image called "Yohhoy."
+•	The Growth Rule: To make a new version, the algorithm takes the previous version, splits it in half, and tucks the "grandparent" version right into the middle.
+o	Rule: New Version = Left side of last version + Version before that + Right side of last version.
+•	Biological Growth: The total length of the string grows by adding the lengths of the two previous steps. This is the same math found in the Fibonacci Sequence.
+•	The Golden Ratio: As the fractal gets larger, the way it scales matches the Golden Ratio (1.618). This is a famous number found in nature, from the petals of flowers to the shape of galaxies.
+•	How it Looks (The Canopy): In a 2D drawing, the characters act like directions for a pen:
+o	Y: Splits one line into two.
+o	o / h: Tilt the lines to create a curve.
+•	Infinite Nesting: Because the older versions are always tucked into the center of the new ones, the "heart" of the fractal stays the same while the "umbrella" or "canopy" expands outward.
