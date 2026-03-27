@@ -16,7 +16,7 @@ public class YohFractalPattern {
         // 1. INPUT STRING
         String seed = getUserInput(sc);
         
-        System.out.print("How many iterations? (Warning! : Entering more than 6 may result in System Crash!) : ");
+        System.out.print("How many iterations? (Warning! : Entering more than 15 may result in System Crash!) : ");
         int iterations = sc.nextInt();
 
         if (iterations < 1) return;
