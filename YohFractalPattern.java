@@ -1,7 +1,7 @@
 /*
  * Yoh-hoy Fractal Algorithm (CSFCPj)
  * ----------------------------------
- * Created by: Samaresh Dutta ( Sam78887 )
+ * Created by: Sam78887
  * Date: March 2026
  * License: MIT (See LICENSE file for details)
  */
