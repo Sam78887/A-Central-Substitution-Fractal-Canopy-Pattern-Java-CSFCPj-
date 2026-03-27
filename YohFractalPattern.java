@@ -16,7 +16,7 @@ public class YohFractalPattern {
         // 1. INPUT STRING
         String seed = getUserInput(sc);
         
-        System.out.print("How many iterations? ");
+        System.out.print("How many iterations? (Warning! : Entering more than 6 may result in System Crash!)");
         int iterations = sc.nextInt();
 
         if (iterations < 1) return;
@@ -29,6 +29,11 @@ public class YohFractalPattern {
         printString(1, p[0]);
 
         if (iterations < 2) return;
+
+        if (iterations > 6) {
+            System.out.println("Limit reached. For system stability, iterations are capped at 6.");
+            iterations = 6;
+        }
 
         // PATTERN 2: Yoh + hoy = Yohhoy
         p[1] = p[0] + mirrorString(p[0]);
