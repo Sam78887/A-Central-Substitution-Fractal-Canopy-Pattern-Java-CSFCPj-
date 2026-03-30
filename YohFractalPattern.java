@@ -1,10 +1,16 @@
 /*
- * Yoh-hoy Fractal Algorithm (CSFCPj)
- * ----------------------------------
- * Created by: Sam78887
- * Date: March 2026
- * License: MIT (See LICENSE file for details)
- */
+
+Yoh-hoy Fractal Algorithm (CSFCPj)
+
+Copyright (c) 2026 Sam78887
+Licensed under SNSL v1.0
+Created by: Sam78887
+Non-Commercial Use Only
+
+
+*/
+
+
 
 import java.util.Scanner;
 
