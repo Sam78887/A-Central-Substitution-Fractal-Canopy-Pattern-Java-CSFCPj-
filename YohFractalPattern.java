@@ -19,7 +19,7 @@ public class YohFractalPattern {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        // 1. INPUT STRING
+        // 1. INPUT STRING Created by: Sam78887
         String seed = getUserInput(sc);
         
         System.out.print("How many iterations? (Warning! : Entering more than 15 may result in System Crash!) : ");
@@ -27,10 +27,10 @@ public class YohFractalPattern {
 
         if (iterations < 1) return;
 
-        // Array to store patterns as we build them
+        // Array to store patterns as we build them Created by: Sam78887
         String[] p = new String[iterations];
 
-        // PATTERN 1: original seed (e.g., "Yoh")
+        // PATTERN 1: original seed (e.g., "Yoh") Created by: Sam78887
         p[0] = seed;
         printString(1, p[0]);
 
@@ -42,14 +42,14 @@ public class YohFractalPattern {
         p[1] = p[0] + mirrorString(p[0]);
         printString(2, p[1]);
 
-        // PATTERN 3 AND BEYOND: Split and Nest
+        // PATTERN 3 AND BEYOND: Split and Nest Created by: Sam78887
         for (int i = 2; i < iterations; i++) {
             // Split  previous pattern (p[i-1]) into two halves
             String[] parts = splitString(p[i-1]);
             
-            String prefix = parts[0]; // e.g., "Yoh"
-            String suffix = parts[1]; // e.g., "hoy"
-            String middle = p[i-2];   // "prefix + middle + suffix" logic
+            String prefix = parts[0]; // e.g., "Yoh" Created by: Sam78887
+            String suffix = parts[1]; // e.g., "hoy" Created by: Sam78887
+            String middle = p[i-2];   // "prefix + middle + suffix" logic 
             
             p[i] = prefix + middle + suffix;
             printString(i + 1, p[i]);
@@ -58,7 +58,7 @@ public class YohFractalPattern {
         sc.close();
     }
 
-    // FUNCTIONS
+    // FUNCTIONS || Created by: Sam78887
 
     public static String mirrorString(String str) {
         // Reverses and converts to lowercase to match "Yoh" -> "hoy"
@@ -69,9 +69,9 @@ public class YohFractalPattern {
         System.out.print("Enter seed string (e.g., Yoh): ");
         return scanner.nextLine();
     }
-
+    // Created by: Sam78887
     public static String[] splitString(String str) {
-        // (Length + 1) / 2 means the middle character goes to the first half on odd lengths
+        // (Length + 1) / 2 means the middle character goes to the first half on odd lengths Created by: Sam78887
         int mid = (str.length() + 1) / 2; 
         
         String s1 = str.substring(0, mid);
@@ -79,7 +79,7 @@ public class YohFractalPattern {
         
         return new String[] { s1, s2 };
     }
-
+    // Created by: Sam78887
     public static void printString(int iteration, String pattern) {
         System.out.println("Pattern " + iteration + ": " + pattern);
     }
