@@ -44,7 +44,7 @@ public class YohFractalPattern {
 
         // PATTERN 3 AND BEYOND: Split and Nest Created by: Sam78887
         for (int i = 2; i < iterations; i++) {
-            // Split  previous pattern (p[i-1]) into two halves
+            // Split  previous pattern (p[i-1]) into two halves Created by: Sam78887
             String[] parts = splitString(p[i-1]);
             
             String prefix = parts[0]; // e.g., "Yoh" Created by: Sam78887
@@ -61,7 +61,7 @@ public class YohFractalPattern {
     // FUNCTIONS || Created by: Sam78887
 
     public static String mirrorString(String str) {
-        // Reverses and converts to lowercase to match "Yoh" -> "hoy"
+        // Reverses and converts to lowercase to match "Yoh" -> "hoy" Created by: Sam78887
         return new StringBuilder(str).reverse().toString().toLowerCase();
     }
 
